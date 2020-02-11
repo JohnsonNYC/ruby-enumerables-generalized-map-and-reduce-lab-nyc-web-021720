@@ -18,7 +18,7 @@ def reduce (array, sv = nil)
     i = 1 
   end 
   while i < array.length do 
-    sum = yield(sum,array[i])
+    sum = yield(sum,array[i])  #{|memo, n| memo + n}
     i += 1
   end 
   sum
